@@ -1,3 +1,3 @@
 # portfolio-FrontEnd
 
-practica repositorio
+practica repositorio.
