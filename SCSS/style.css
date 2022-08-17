@@ -1,0 +1,11 @@
+.navbar {
+  background-color: black;
+}
+.navbar .navbar-brand img {
+  max-width: 40%;
+}
+
+.navbar-toggler-icon {
+  background-color: aqua;
+  stroke: aqua;
+}/*# sourceMappingURL=style.css.map */
