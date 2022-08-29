@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500;700;800&display=swap");
+body {
+  font-family: "Kanit", sans-serif;
+  background-image: radial-gradient(circle, #b5ecf3, #6ad5f6, #00bbff, #009cff, #0076ff, #006fff, #0067ff, #005fff, #007bff, #0094ff, #1ca9ff, #5fbdfb);
+}
+
+header {
+  margin-top: 10px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  font-family: "Kanit", sans-serif;
+  font-size: small;
+  font-weight: 300;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  display: block;
+}
+header .navbar {
+  /* From https://css.glass */
+  background: rgba(126, 182, 232, 0.59);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  border: 1px solid rgba(126, 182, 232, 0.5);
+}
+header .navbar .navbar-toggler {
+  border: none;
+}
+header .navbar .logo {
+  width: 100px;
+}
+header .navbar .logo img {
+  width: 100%;
+}
+header section.row.banner {
+  position: relative;
+  padding-top: 10px;
+  min-height: 300px;
+}
+header section.row.banner img.compu {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+header section.row.banner img.perfil-top {
+  width: 25%;
+  transform: translate(-50%);
+  -o-border-image: fill;
+     border-image: fill;
+}
+
+section.perfil {
+  margin-top: 10px;
+  font-family: "Kanit", sans-serif;
+  font-size: small;
+  font-weight: 300;
+}
+section.perfil .fotop {
+  background: rgba(126, 182, 232, 0.59);
+}
+section.perfil .fotop img {
+  width: 30%;
+}
+section.perfil .fotop .card-body {
+  justify-items: center;
+}/*# sourceMappingURL=style.css.map */
