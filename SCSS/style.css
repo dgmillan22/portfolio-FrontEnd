@@ -10,12 +10,11 @@ header {
   max-width: -moz-max-content;
   max-width: max-content;
   font-family: "Kanit", sans-serif;
-  font-size: small;
+  font-size: medium;
   font-weight: 300;
   min-height: -webkit-max-content;
   min-height: -moz-max-content;
   min-height: max-content;
-  display: block;
 }
 header .navbar {
   /* From https://css.glass */
@@ -35,37 +34,180 @@ header .navbar .logo {
 header .navbar .logo img {
   width: 100%;
 }
-header section.row.banner {
-  position: relative;
-  padding-top: 10px;
-  min-height: 300px;
+
+.row.figure {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-header section.row.banner img.compu {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  border-radius: 10px;
+.row.figure .banner {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  z-index: -1;
 }
-header section.row.banner img.perfil-top {
-  width: 25%;
-  transform: translate(-50%);
-  -o-border-image: fill;
-     border-image: fill;
+.row.figure .avatar {
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border: 3px solid rgb(38, 0, 225);
+  top: 93%;
+  left: 20%;
+  background-image: url(/IMG/foto\ perfil\ portfolio.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-section.perfil {
+.row.Bio {
   margin-top: 10px;
-  font-family: "Kanit", sans-serif;
-  font-size: small;
-  font-weight: 300;
-}
-section.perfil .fotop {
+  margin-bottom: 10px;
   background: rgba(126, 182, 232, 0.59);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  border: 1px solid rgba(126, 182, 232, 0.5);
 }
-section.perfil .fotop img {
-  width: 30%;
+.row.Bio .nombre {
+  font-family: "Kanit", sans-serif;
+  color: #46f471;
+  font-size: 3rem;
+  font-weight: 500;
 }
-section.perfil .fotop .card-body {
-  justify-items: center;
+.row.Bio .profesion {
+  font: size 12pt;
+  font-weight: 500;
+  color: white;
+}
+.row.Bio .Descripcion {
+  font-family: "Kanit", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+.row.Bio .Descripcion .cerrar {
+  text-align: end;
+  padding-left: 30px;
+}
+.row.Bio .Descripcion .card-title {
+  font-size: 4rem;
+  font-weight: 500;
+  color: rgba(225, 231, 236, 0.5);
+  padding-bottom: 10px;
+}
+.row.Bio .Descripcion .card-text {
+  padding-bottom: 10px;
+  text-align: justify;
+  font-size: 12pt;
+  font-weight: 200;
+  padding-right: 30px;
+  color: rgb(125, 120, 120);
+}
+.row.Bio .Descripcion .Cv {
+  padding-top: 10px;
+  text-align: end;
+  padding-right: 30px;
+}
+
+.row.empleos {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgba(126, 182, 232, 0.59);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  border: 1px solid rgba(126, 182, 232, 0.5);
+}
+.row.empleos .nombre {
+  font-family: "Kanit", sans-serif;
+  color: #46f471;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.row.empleos .profesion {
+  font: size 12pt;
+  font-weight: 500;
+  color: white;
+}
+.row.empleos .Descripcion {
+  font-family: "Kanit", sans-serif;
+  padding: 30px;
+}
+.row.empleos .Descripcion .cerrar {
+  text-align: end;
+}
+.row.empleos .Descripcion .editar {
+  text-align: end;
+  height: 1rem;
+}
+.row.empleos .Descripcion .card-title {
+  font-size: 4rem;
+  font-weight: 500;
+  color: rgba(225, 231, 236, 0.5);
+  padding-bottom: 10px;
+}
+.row.empleos .Descripcion .empleos {
+  display: flex;
+}
+.row.empleos .Descripcion .empleos .card-title.empresa {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgba(225, 231, 236, 0.5);
+  padding-bottom: 10px;
+  text-align: center;
+}
+.row.empleos .Descripcion .empleos .cargo {
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+.row.empleos .Descripcion .empleos .card-text.puesto {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-align: justify;
+  font-size: 12pt;
+  font-weight: 200;
+  padding-right: 30px;
+  color: white;
+}
+.row.empleos .Descripcion .estudios {
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+  padding: 20px;
+}
+.row.empleos .Descripcion .estudios .caja {
+  border: 1px solid rgba(181, 236, 243, 0.7);
+}
+.row.empleos .Descripcion .estudios .caja .editar {
+  margin: 10px;
+}
+.row.empleos .Descripcion .estudios .caja .titulo {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgba(225, 231, 236, 0.5);
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.row.habilidades {
+  margin: 10px 0px;
+  background: rgba(126, 182, 232, 0.59);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  border: 1px solid rgba(126, 182, 232, 0.5);
+}
+.row.habilidades .Descripcion {
+  font-family: "Kanit", sans-serif;
+  padding: 30px;
+}
+.row.habilidades .Descripcion .cerrar {
+  text-align: end;
 }/*# sourceMappingURL=style.css.map */
