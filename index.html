@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -655,4 +656,663 @@ data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-rootMargin="90" da
     <!-- <script src="js/script.js"></script> -->
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SCSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="SCSS/icofont.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <title>Portfolio Web Alberto Millan</title>
+</head>
+<!-- 
+data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-rootMargin="90" data-bs-maxlength="100%" -->
+
+<body>
+    <!-- navbar seccion -->
+    <header class="container">
+        <nav class="navbar navbar-expand-md shadow-sm p-2">
+            <div class="container justify-content-around">
+                <a class="navbar-brand logo" href="#">
+                    <img src="IMG/LOGO-ARGENTINA-PROGRAMA2.png" alt="LOGO-ARGENTINA-PROGRAMA"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-three-dots navbarNav menu_hamburgesa"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Educación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Hard & Soft Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary px-3" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Iniciar sesión
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Inicio de sesion popup -->
+
+        <section class="row">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form class="px-4 py-3">
+                            <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
+                            <div class="mb-3">
+                                <label for="exampleDropdownFormEmail1" class="form-label">Dirección de correo
+                                    electrónico</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                    placeholder="email@ejemplo.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                    placeholder="Contraseña">
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">
+                                        Recordarme
+                                    </label>
+                                </div>
+                                <div class="row">
+                                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+
+                                </div>
+                                <div class="p-t-3">
+                                    <p class="text-center"><a href="#">¿Nuevo por aquí? Inscribirse</a></p>
+                                    <p class="text-center"><a href="#">¿Se te olvidó tu contraseña?</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- FOTO Y BANNER DE PERFIL -->
+    <section class="container" id="inicio">
+        <div class="row figure">
+            <div class="col position-relative">
+                <div class="banner">
+                    <img src="IMG/banner.jpg" class="img-fluid rounded banner" alt="">
+                </div>
+
+                <div class="avatar rounded-circle">
+                    <figure class="boton">
+                        <!-- <img src="IMG/foto perfil portfolio.jpg" class="img-fluid foto-perfil rounded" alt=""> -->
+                        <i class="bi bi-cloud-arrow-up"></i>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- INFO PERFIL -->
+
+        <article class="container">
+            <div class="row Bio  rounded">
+
+
+                <div class="col-4  text-center  perfil">
+                    <h1 class="nombre">Alberto Millán</h1>
+                    <p class="profesion">Full Stack Developer Jr. & Diseñador gráfico </p>
+                </div>
+
+                <div class="col-8 ">
+                    <div class="Descripcion">
+                        <div class="cerrar">
+                            <button type="button" class="btn-close cerrar" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div>
+                            <h2 class="card-title">Bio</h2>
+                            <p class="card-text">Mi nombre es Alberto Millan, diseñador gráfico y estudiante de
+                                programación en Argentina Programa. <br> Mi trabajo lo define la gran atención al
+                                detalle, utilizando una tipografía expresiva, <br> imagenes o recursos de ilustración.
+                                <br> Disfruto asumir nuevos proyectos, aprender sobre nuevas tecnologías.
+                            </p>
+                        </div>
+
+                        <div class="Cv">
+                            <a href="#" class="btn btn-outline-light">Descargar CV</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    </section>
+
+    <!-- EXPERIENCIA LABORAL -->
+
+    <section class="container">
+        <article class="container">
+            <div class="row empleos align-items-center rounded">
+                <div class="col">
+                    <div class="Descripcion">
+                        <div class="cerrar">
+                            <button type="button" class="btn-close cerrar" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div>
+                            <h2 class="card-title text-center">Experiencia Laboral</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container position-relative">
+                    <div class="row">
+                        <div class="Descripcion">
+                            <div class="editar">
+                                <i type="button" class="bi bi-pencil"></i>
+                            </div>
+                            <div class="empleos">
+                                <div class="col-4">
+                                    <h3 class="card-title empresa">Milstein Ravel</h3>
+                                    <p class="cargo">Cargo: Diseñador gráfico / producción gráfica</p>
+                                </div>
+                                <div class="col-8">
+                                    <p class="card-text puesto">Mi nombre es Alberto Millan, diseñador gráfico y
+                                        estudiante de programación en Argentina Programa. <br> Mi trabajo lo define la
+                                        gran atención al detalle, utilizando una tipografía expresiva, <br> imagenes o
+                                        recursos de ilustración.
+                                        <br> Disfruto asumir nuevos proyectos, aprender sobre nuevas tecnologías.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="Descripcion">
+                            <div class="editar">
+                                <i type="button" class="bi bi-pencil"></i>
+                            </div>
+                            <div class="empleos">
+                                <div class="col-4">
+                                    <h3 class="card-title empresa">Milstein Ravel</h3>
+                                    <p class="cargo">Cargo: Diseñador gráfico / producción gráfica</p>
+                                </div>
+                                <div class="col-8">
+                                    <p class="card-text puesto">Mi nombre es Alberto Millan, diseñador gráfico y
+                                        estudiante de programación en Argentina Programa. <br> Mi trabajo lo define la
+                                        gran atención al detalle, utilizando una tipografía expresiva, <br> imagenes o
+                                        recursos de ilustración.
+                                        <br> Disfruto asumir nuevos proyectos, aprender sobre nuevas tecnologías.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="Descripcion">
+                            <div class="editar">
+                                <i type="button" class="bi bi-pencil"></i>
+                            </div>
+                            <div class="empleos">
+                                <div class="col-4">
+                                    <h3 class="card-title empresa">Milstein Ravel</h3>
+                                    <p class="cargo">Cargo: Diseñador gráfico / producción gráfica</p>
+                                </div>
+                                <div class="col-8">
+                                    <p class="card-text puesto">Mi nombre es Alberto Millan, diseñador gráfico y
+                                        estudiante de programación en Argentina Programa. <br> Mi trabajo lo define la
+                                        gran atención al detalle, utilizando una tipografía expresiva, <br> imagenes o
+                                        recursos de ilustración.
+                                        <br> Disfruto asumir nuevos proyectos, aprender sobre nuevas tecnologías.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    
+    <!-- EDUCACION -->
+    <section class="container">
+        <article class="container">
+            <div class="row educacion align-items-center rounded">
+                
+                <div class="col">
+                    <div class="Descripcion">
+                        <div class="cerrar">
+                            <button type="button" class="btn-close cerrar" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div>
+                            <h2 class="card-title text-center">Educación <i class="bi bi-mortarboard"></i></h2>
+                        </div>
+                    </div>
+                </div>
+<div class="container">
+                <div class="row instituciones justify-content-around">
+                    <div class="col-5 caja rounded">
+                        <div class="editar">
+                                <i type="button" class="bi bi-pencil"></i>
+                        </div>
+                            <div class="text-start">
+                            <p>Título obtenido:</p>
+                            <h3 class="card-title titulo">Bachiller en Ciencias</h3>
+                            <p>Institutión: <span>U.E.P. Colegio Santos Luzardo</span></p>
+                            <p>Fecha: <span>Septiembre / 1999 - Junio 2004</span></p>
+                        </div>
+                    </div>
+                    <div class="col-5 caja rounded">
+                        <div class="editar">
+                                <i type="button" class="bi bi-pencil"></i>
+                        </div>
+                            <div class="text-start">
+                            <p>Título obtenido:</p>
+                            <h3 class="card-title titulo">Bachiller en Ciencias</h3>
+                            <p>Institutión: <span>U.E.P. Colegio Santos Luzardo</span></p>
+                            <p>Fecha: <span>Septiembre / 1999 - Junio 2004</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- HARD & SOFT SKILLS -->
+
+    <section class="container ">
+        <div class="row habilidades align-items-center rounded">
+            <div class="col">
+                <div class="Descripcion">
+                    <div class="cerrar">
+                        <button type="button" class="btn-close cerrar" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <h2 class="card-title text-center">Hard & Soft Skills </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex flex-wrap justify-content-around">
+                <div class="row">
+                    <div class="col col-auto pb-4">
+                        <div class="skill-bars">
+                            <div class="editar text-end">
+                                <i type="button" class="bi bi-pencil"></i>
+                            </div>
+                            <h3>Front end </h3>
+
+                            <div class="bar">
+                                <div class="info ">
+                                    <span>HTML</span>
+                                </div>
+                                <div class="progress-line html">
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <div class="bar">
+                                <div class="info">
+                                    <span>CSS</span>
+                                </div>
+                                <div class="progress-line css">
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <div class="bar">
+                                <div class="info">
+                                    <span>JAVASCRIPT</span>
+                                </div>
+                                <div class="progress-line js">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                    <span>ANGULAR</span>
+                                </div>
+                                <div class="progress-line angular">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                    <span>MySQL</span>
+                                </div>
+                                <div class="progress-line mysql">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-auto pb-3">
+                    <div class="skill-bars">
+                        <div class="editar text-end">
+                            <i type="button" class="bi bi-pencil"></i>
+                        </div>
+                        <h3>Diseño</h3>
+
+                        <div class="bar">
+                            <div class="info">
+                                <span>Adobe Illustrator</span>
+                            </div>
+                            <div class="progress-line ilustrator">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <span>Adobe Photoshop</span>
+                            </div>
+                            <div class="progress-line psd">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <span>Adobe After Effects</span>
+                            </div>
+                            <div class="progress-line AAE">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Figma</span>
+                            </div>
+                            <div class="progress-line figma">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Autodesk Sketchbook</span>
+                            </div>
+                            <div class="progress-line ADS">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+
+    <section class="container ">
+        <div class="row habilidades align-items-center rounded pb-2">
+            <div class="col">
+                <div class="Descripcion">
+                    <div class="cerrar">
+                        <button type="button" class="btn-close cerrar" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <h2 class="card-title text-center">Proyectos</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex flex-wrap justify-content-around">
+                <div class="row">
+                    <div class="col col-auto">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-auto">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section class="container ">
+        <div class="row contacto align-items-center rounded">
+            <div class="cerrar">
+                <button type="button" class="btn-close cerrar" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="col">
+                <div class="Descripcion">
+                    
+                    <div>
+                        <h2 class="card-title text-center">Contacto </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+           
+                <div class="contact_form">
+                    <div class="formulario">
+                        <h1>Formulario de contacto</h1>
+                        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                        
+                        <form action="submeter-formulario.php" method="post">
+                            <p>
+                                <label for="nombre" class="colocar_nombre">Nombre
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                    placeholder="Escribe tu nombre">
+                            </p>
+
+                            <p>
+                                <label for="email" class="colocar_email">Email
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                    placeholder="Escribe tu Email">
+                            </p>
+
+                            <p>
+                                <label for="telefone" class="colocar_telefono">Teléfono
+                                </label>
+                                <input type="tel" name="introducir_telefono" id="telefono"
+                                    placeholder="Escribe tu teléfono">
+                            </p>
+
+                            <p>
+                                <label for="website" class="colocar_website">Sitio web
+                                </label>
+                                <input type="url" name="introducir_website" id="website"
+                                    placeholder="Escribe la URL de tu web">
+                            </p>
+
+                            <p>
+                                <label for="asunto" class="colocar_asunto">Asunto
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                                    placeholder="Escribe un asunto">
+                            </p>
+
+                            <p>
+                                <label for="mensaje" class="colocar_mensaje">Mensaje
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+                                    required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                            </p>
+
+                            <button type="submit" name="enviar_formulario" id="enviar">
+                                <p>Enviar</p>
+                            </button>
+
+                            <p class="aviso">
+                                <span class="obligatorio"> * </span>los campos son obligatorios.
+                            </p>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-5">
+
+            </div>
+            <div class="col-7">
+
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <!-- <script src="js/script.js"></script> -->
+</body>
+
+>>>>>>> a03615d8d403b87e77df4ed48a059b5b1ce0ec20
 </html>
