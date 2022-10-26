@@ -243,33 +243,6 @@ header{
             }
         }
 
-        .estudios{
-            display: flex;
-            text-align: center;
-            font-size: 1rem;
-            font-weight: 300;
-            color: white;
-            
-
-            .caja{
-                
-                
-                background: rgba(255, 255, 255, 0.2);
-                box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
-                // .editar{
-                    
-                // }
-
-                .titulo{
-                    font-size:2rem;
-                    font-weight: 400;
-                    color: rgba(225, 231, 236, 0.5);
-                    padding-bottom: 10px;
-                    text-align: center;
-                }
-            }
-            
-        }
     }
 }
 
@@ -299,7 +272,48 @@ header{
       padding-bottom: 10px;               
     }
   }
+  
+  .row.instituciones{
+
+    padding: 25px 25px;
+    .caja{
+        
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+        font-family: 'Kanit', sans-serif;
+        padding-left: 20px;
+        align-items: center;
+          .editar{
+            text-align: end;
+            height: 1rem;
+            color: white;
+            padding: 15px;
+          }
+
+        p{
+          font-size:15px;
+            font-weight: 400;
+            color: white;
+            ;
+
+            span{
+              font-weight: 300;
+            }
+        }
+        
+        .card-title.titulo{
+            font-size:2rem;
+            font-weight: 400;
+            color: #005fff;
+            padding-bottom: 15px;
+            
+        }
+    }
+  }
+  
+    
 }
+
 
 
           // HARD & SOFT SKILLS
@@ -493,6 +507,11 @@ header{
     border: 1px solid rgba(126, 182, 232, 0.5);
     height: max-content;
 
+        
+    .cerrar{
+      text-align: end;    
+      }
+
     .Descripcion{
         font-family: 'Kanit', sans-serif;
         padding: 30px;
@@ -509,6 +528,7 @@ header{
         }
     }
 }
+
 
 
 

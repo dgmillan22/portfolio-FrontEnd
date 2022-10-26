@@ -249,8 +249,9 @@ data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-rootMargin="90" da
     
     <!-- EDUCACION -->
     <section class="container">
-        <article class="container justify-content-around">
+        <article class="container">
             <div class="row educacion align-items-center rounded">
+                
                 <div class="col">
                     <div class="Descripcion">
                         <div class="cerrar">
@@ -262,36 +263,32 @@ data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-rootMargin="90" da
                         </div>
                     </div>
                 </div>
-
-                <div class="container position-relative">
-                    <div class="row">
-                        <div class="estudios justify-content-around">
-                            <div class="col-6 caja rounded px-1">
-                                <div class="editar p-3">
-                                    <i type="button" class="bi bi-pencil"></i>
-                                </div>
-                                <h3>Título obtenido:</h3>
-                                <h3 class="card-title titulo">Diseñador Gráfico</h3>
-                                <p>Fecha:</p>
-                                <p>Institutión:</p>
-                            </div>
-
-                            <div class="col-6 caja rounded">
-                                <div class="editar p-3">
-                                    <i type="button" class="bi bi-pencil"></i>
-                                </div>
-                                <p>Título obtenido:</p>
-                                <h3 class="card-title titulo">Bachiller en Ciencias</h3>
-
-                                <div class="container text-start">
-                                    <p>Fecha: Septiembre / 1999 - Junio 2004</p>
-                                    <p>Institutión: <br> U.E.P. Colegio Santos Luzardo</p>
-                                </div>
-                            </div>
-
+<div class="container">
+                <div class="row instituciones justify-content-around">
+                    <div class="col-5 caja rounded">
+                        <div class="editar">
+                                <i type="button" class="bi bi-pencil"></i>
+                        </div>
+                            <div class="text-start">
+                            <p>Título obtenido:</p>
+                            <h3 class="card-title titulo">Bachiller en Ciencias</h3>
+                            <p>Institutión: <span>U.E.P. Colegio Santos Luzardo</span></p>
+                            <p>Fecha: <span>Septiembre / 1999 - Junio 2004</span></p>
+                        </div>
+                    </div>
+                    <div class="col-5 caja rounded">
+                        <div class="editar">
+                                <i type="button" class="bi bi-pencil"></i>
+                        </div>
+                            <div class="text-start">
+                            <p>Título obtenido:</p>
+                            <h3 class="card-title titulo">Bachiller en Ciencias</h3>
+                            <p>Institutión: <span>U.E.P. Colegio Santos Luzardo</span></p>
+                            <p>Fecha: <span>Septiembre / 1999 - Junio 2004</span></p>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </article>
     </section>
@@ -554,22 +551,25 @@ data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-rootMargin="90" da
 
     <section class="container ">
         <div class="row contacto align-items-center rounded">
+            <div class="cerrar">
+                <button type="button" class="btn-close cerrar" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
             <div class="col">
                 <div class="Descripcion">
-                    <div class="cerrar">
-                        <button type="button" class="btn-close cerrar" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
+                    
                     <div>
                         <h2 class="card-title text-center">Contacto </h2>
                     </div>
                 </div>
             </div>
-            <div class="col col-auto">
+            <div class="row">
+           
                 <div class="contact_form">
                     <div class="formulario">
                         <h1>Formulario de contacto</h1>
                         <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                        
                         <form action="submeter-formulario.php" method="post">
                             <p>
                                 <label for="nombre" class="colocar_nombre">Nombre
@@ -629,6 +629,7 @@ data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-rootMargin="90" da
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
