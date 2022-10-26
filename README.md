@@ -1,3 +1,3 @@
 # portfolio-FrontEnd
 
-practica repositorio.
+ir a repositorio desarrollo
