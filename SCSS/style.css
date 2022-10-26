@@ -25,6 +25,9 @@ header .navbar {
   -webkit-backdrop-filter: blur(7.3px);
   border: 1px solid rgba(126, 182, 232, 0.5);
 }
+header .navbar .nav-item .nav-link {
+  color: white;
+}
 header .navbar .navbar-toggler {
   border: none;
 }
@@ -70,13 +73,16 @@ header .navbar .logo img {
   -webkit-backdrop-filter: blur(7.3px);
   border: 1px solid rgba(126, 182, 232, 0.5);
 }
-.row.Bio .nombre {
+.row.Bio .perfil {
+  padding-top: 5em;
+}
+.row.Bio .perfil .nombre {
   font-family: "Kanit", sans-serif;
   color: #46f471;
   font-size: 3rem;
   font-weight: 500;
 }
-.row.Bio .profesion {
+.row.Bio .perfil .profesion {
   font: size 12pt;
   font-weight: 500;
   color: white;
@@ -102,7 +108,7 @@ header .navbar .logo img {
   font-size: 12pt;
   font-weight: 200;
   padding-right: 30px;
-  color: rgb(125, 120, 120);
+  color: white;
 }
 .row.Bio .Descripcion .Cv {
   padding-top: 10px;
@@ -141,6 +147,7 @@ header .navbar .logo img {
 .row.empleos .Descripcion .editar {
   text-align: end;
   height: 1rem;
+  color: white;
 }
 .row.empleos .Descripcion .card-title {
   font-size: 4rem;
@@ -179,13 +186,10 @@ header .navbar .logo img {
   font-size: 1rem;
   font-weight: 300;
   color: white;
-  padding: 20px;
 }
 .row.empleos .Descripcion .estudios .caja {
-  border: 1px solid rgba(181, 236, 243, 0.7);
-}
-.row.empleos .Descripcion .estudios .caja .editar {
-  margin: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 .row.empleos .Descripcion .estudios .caja .titulo {
   font-size: 2rem;
@@ -193,6 +197,30 @@ header .navbar .logo img {
   color: rgba(225, 231, 236, 0.5);
   padding-bottom: 10px;
   text-align: center;
+}
+
+.row.educacion {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgba(126, 182, 232, 0.59);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  border: 1px solid rgba(126, 182, 232, 0.5);
+}
+.row.educacion .Descripcion {
+  font-family: "Kanit", sans-serif;
+  padding: 30px;
+}
+.row.educacion .Descripcion .cerrar {
+  text-align: end;
+}
+.row.educacion .Descripcion .card-title {
+  font-size: 4rem;
+  font-weight: 500;
+  color: rgba(225, 231, 236, 0.5);
+  padding-bottom: 10px;
 }
 
 .row.habilidades {
@@ -203,6 +231,9 @@ header .navbar .logo img {
   backdrop-filter: blur(7.3px);
   -webkit-backdrop-filter: blur(7.3px);
   border: 1px solid rgba(126, 182, 232, 0.5);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 .row.habilidades .Descripcion {
   font-family: "Kanit", sans-serif;
@@ -210,4 +241,202 @@ header .navbar .logo img {
 }
 .row.habilidades .Descripcion .cerrar {
   text-align: end;
+}
+.row.habilidades .Descripcion .card-title {
+  font-size: 4rem;
+  font-weight: 500;
+  color: rgba(225, 231, 236, 0.5);
+  padding-bottom: 10px;
+}
+.row.habilidades .skill-bars {
+  padding: 25px 25px;
+  width: 600px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-family: "Kanit", sans-serif;
+  color: white;
+}
+.row.habilidades .skill-bars .bar {
+  margin: 20px 0;
+}
+.row.habilidades .skill-bars .bar:first-child {
+  margin-top: 0px;
+}
+.row.habilidades .skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+.row.habilidades .skill-bars .bar .info span {
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 0;
+  -webkit-animation: showText 0.5s 1s linear forwards;
+          animation: showText 0.5s 1s linear forwards;
+}
+@-webkit-keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.row.habilidades .skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  border: 1px solid rgba(181, 236, 243, 0.7);
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.8);
+  -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+          animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@-webkit-keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.row.habilidades .bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #46f471;
+  -webkit-animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+          animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.row.habilidades .bar .progress-line.html span {
+  width: 60%;
+}
+.row.habilidades .bar .progress-line.ilustrator span {
+  width: 100%;
+}
+.row.habilidades .bar .progress-line.css span {
+  width: 60%;
+}
+.row.habilidades .bar .progress-line.psd span {
+  width: 95%;
+}
+.row.habilidades .bar .progress-line.js span {
+  width: 40%;
+}
+.row.habilidades .bar .progress-line.AAE span {
+  width: 70%;
+}
+.row.habilidades .bar .progress-line.angular span {
+  width: 30%;
+}
+.row.habilidades .bar .progress-line.figma span {
+  width: 40%;
+}
+.row.habilidades .bar .progress-line.mysql span {
+  width: 15%;
+}
+.row.habilidades .bar .progress-line.ADS span {
+  width: 100%;
+}
+.row.habilidades .progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #005fff;
+  opacity: 0;
+  -webkit-animation: showText2 0.5s 1.5s linear forwards;
+          animation: showText2 0.5s 1.5s linear forwards;
+}
+.row.habilidades .progress-line span::after {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #005fff;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  -webkit-animation: showText2 0.5s 1.5s linear forwards;
+          animation: showText2 0.5s 1.5s linear forwards;
+}
+@-webkit-keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.row.habilidades .progress-line.html span::after {
+  content: "60%";
+}
+.row.habilidades .progress-line.ilustrator span::after {
+  content: "100%";
+}
+.row.habilidades .progress-line.css span::after {
+  content: "60%";
+}
+.row.habilidades .progress-line.psd span::after {
+  content: "95%";
+}
+.row.habilidades .progress-line.js span::after {
+  content: "40%";
+}
+.row.habilidades .progress-line.AAE span::after {
+  content: "70%";
+}
+.row.habilidades .bar .progress-line.figma span::after {
+  content: "40%";
+}
+.row.habilidades .progress-line.angular span::after {
+  content: "30%";
+}
+.row.habilidades .progress-line.mysql span::after {
+  content: "15%";
+}
+.row.habilidades .progress-line.ADS span::after {
+  content: "100%";
+}
+
+.row.contacto {
+  margin: 10px 0px;
+  background: rgba(126, 182, 232, 0.59);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  border: 1px solid rgba(126, 182, 232, 0.5);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.row.contacto .Descripcion {
+  font-family: "Kanit", sans-serif;
+  padding: 30px;
+}
+.row.contacto .Descripcion .cerrar {
+  text-align: end;
+}
+.row.contacto .Descripcion .card-title {
+  font-size: 4rem;
+  font-weight: 500;
+  color: rgba(225, 231, 236, 0.5);
+  padding-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
